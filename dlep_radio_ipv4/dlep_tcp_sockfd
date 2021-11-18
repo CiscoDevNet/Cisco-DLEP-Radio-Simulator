@@ -1,0 +1,259 @@
+dlep_client_peer_event_handlers.c:             secs_to_milliseconds(p2config->peer_offer_interval),
+dlep_client_peer_event_handlers.c:             secs_to_milliseconds(p2config->peer_offer_interval),
+dlep_client_peer_event_handlers.c:        close(p2config->dlep_udp_sockfd);
+dlep_client_peer_event_handlers.c:        close(p2config->dlep_tcp_sockfd);
+dlep_client_peer_event_handlers.c:        if (p2config->start_on_discovery) {
+dlep_client_peer_event_handlers.c:                   secs_to_milliseconds(p2config->peer_offer_interval),
+dlep_client_peer_event_handlers.c:                   secs_to_milliseconds(p2config->peer_offer_interval),
+dlep_client_peer_event_handlers.c:             secs_to_milliseconds(p2config->peer_offer_interval),
+dlep_client_peer_event_handlers.c:             secs_to_milliseconds(p2config->peer_offer_interval),
+dlep_client_peer_event_handlers.c:    close(p2config->dlep_udp_sockfd);
+dlep_client_peer_event_handlers.c:    close(p2config->dlep_tcp_sockfd);
+dlep_client_peer_event_handlers.c:    if (p2config->start_on_discovery) {
+dlep_client_peer_event_handlers.c:             secs_to_milliseconds(p2config->peer_offer_interval),
+dlep_client_peer_event_handlers.c:             secs_to_milliseconds(p2config->peer_offer_interval),
+dlep_client_peer_event_handlers.c:    close(p2config->dlep_udp_sockfd);
+dlep_client_peer_event_handlers.c:    close(p2config->dlep_tcp_sockfd);
+dlep_client_peer_event_handlers.c:    if (p2config->start_on_discovery) {
+dlep_client_peer_event_handlers.c:             secs_to_milliseconds(p2config->peer_offer_interval),
+dlep_client_peer_event_handlers.c:             secs_to_milliseconds(p2config->peer_offer_interval),
+dlep_client_peer_event_handlers.c:    close(p2config->dlep_udp_sockfd);
+dlep_client_peer_event_handlers.c:    close(p2config->dlep_tcp_sockfd);
+dlep_client_peer_event_handlers.c:    if (p2config->start_on_discovery) {
+dlep_client_peer_event_handlers.c:                        secs_to_milliseconds(p2config->peer_offer_interval),
+dlep_client_peer_event_handlers.c:                        secs_to_milliseconds(p2config->peer_offer_interval),
+dlep_config.c:    strcpy(p2config->filename, "dlep_sim.cfg");
+dlep_config.c:    strcpy(p2config->sim_name, "dlep");
+dlep_config.c:    p2config->local_udp_port = 0;
+dlep_config.c:    p2config->local_tcp_port = 0;
+dlep_config.c:    p2config->local_ipv4_dot[0] = '\0';
+dlep_config.c:    ipv4_zero_address(&p2config->local_ipv4); 
+dlep_config.c:    p2config->router_udp_port = 0;
+dlep_config.c:    p2config->router_tcp_port = 0;
+dlep_config.c:    p2config->router_ipv4_dot[0] = '\0';
+dlep_config.c:    ipv4_zero_address(&p2config->router_ipv4);
+dlep_config.c:    p2config->start_on_launch = TRUE;
+dlep_config.c:    strcpy(p2config->local_type_description, "no type description"); 
+dlep_config.c:    p2config->local_id = 0;
+dlep_config.c:    p2config->peer_offer_interval = 
+dlep_config.c:    p2config->peer_heartbeat_interval = 
+dlep_config.c:    p2config->peer_heartbeat_missed_threshold = 
+dlep_config.c:    p2config->peer_term_ack_tmo = 
+dlep_config.c:    p2config->peer_term_missed_ack_threshold = 
+dlep_config.c:    p2config->neighbor_up_ack_tmo = 
+dlep_config.c:    p2config->neighbor_up_missed_ack_threshold = 
+dlep_config.c:    p2config->neighbor_update_interval_tmo = 
+dlep_config.c:    p2config->neighbor_activity_timer = 
+dlep_config.c:    p2config->neighbor_down_ack_tmo = 
+dlep_config.c:    p2config->neighbor_down_missed_ack_threshold = 
+dlep_config.c:             p2config->sim_name, 
+dlep_config.c:             p2config->filename);
+dlep_config.c:             p2config->local_udp_port);
+dlep_config.c:             p2config->local_tcp_port);
+dlep_config.c:             p2config->local_ipv4_dot);
+dlep_config.c:    if (p2config->router_udp_port) { 
+dlep_config.c:                 p2config->router_udp_port);
+dlep_config.c:    if (p2config->router_tcp_port) { 
+dlep_config.c:                 p2config->router_tcp_port);
+dlep_config.c:    if (p2config->router_udp_port && p2config->router_tcp_port) { 
+dlep_config.c:                 p2config->router_ipv4_dot);   
+dlep_config.c:             p2config->local_type_description);
+dlep_config.c:             p2config->local_id); 
+dlep_config.c:             p2config->peer_offer_interval); 
+dlep_config.c:             p2config->peer_heartbeat_interval); 
+dlep_config.c:             p2config->peer_heartbeat_missed_threshold); 
+dlep_config.c:             p2config->peer_term_ack_tmo);
+dlep_config.c:             p2config->peer_term_missed_ack_threshold);
+dlep_config.c:             p2config->neighbor_up_ack_tmo);
+dlep_config.c:             p2config->neighbor_up_missed_ack_threshold);
+dlep_config.c:             p2config->neighbor_update_interval_tmo);
+dlep_config.c:             p2config->neighbor_activity_timer); 
+dlep_config.c:             p2config->neighbor_down_ack_tmo);
+dlep_config.c:             p2config->neighbor_down_missed_ack_threshold);
+dlep_config.c:    fp = fopen(p2config->filename, "r");
+dlep_config.c:                p2config->filename);
+dlep_config.c:            strncpy(p2config->sim_name, argv[1], DLEP_SIM_NAME_LEN);
+dlep_config.c:            p2config->start_on_launch = FALSE;
+dlep_config.c:            p2config->start_on_discovery = TRUE;
+dlep_config.c:            p2config->local_udp_port = strtoul(argv[1], NULL, 10);
+dlep_config.c:            p2config->local_tcp_port = strtoul(argv[1], NULL, 10);
+dlep_config.c:            strcpy(p2config->local_ipv4_dot, argv[1]);
+dlep_config.c:            ipv4_dot_decimal2digits(&p2config->local_ipv4, argv[1]);
+dlep_config.c:            p2config->router_udp_port = strtoul(argv[1], NULL, 10);
+dlep_config.c:            p2config->router_tcp_port = strtoul(argv[1], NULL, 10);
+dlep_config.c:            strcpy(p2config->router_ipv4_dot, argv[1]);
+dlep_config.c:            ipv4_dot_decimal2digits(&p2config->router_ipv4, argv[1]);
+dlep_config.c:            p2config->router_ipv4.v4_addr.v4_addr32 = 
+dlep_config.c:                      htonl(p2config->router_ipv4.v4_addr.v4_addr32);
+dlep_config.c:            strncpy(p2config->local_type_description, 
+dlep_config.c:     p2config->local_type_description[RFC5444_TLV_PEER_TYPE_MAX_LENGTH] = '\0';
+dlep_config.c:            p2config->local_id = temp;  
+dlep_config.c:            p2config->peer_heartbeat_interval = strtoul(argv[1], NULL, 10);
+dlep_config.c:            if (p2config->peer_heartbeat_interval < 
+dlep_config.c:                p2config->peer_heartbeat_interval = 
+dlep_config.c:            if (p2config->peer_heartbeat_interval > 
+dlep_config.c:                p2config->peer_heartbeat_interval = 
+dlep_config.c:            p2config->peer_heartbeat_missed_threshold = 
+dlep_config.c:            if (p2config->peer_heartbeat_missed_threshold < 
+dlep_config.c:                p2config->peer_heartbeat_missed_threshold = 
+dlep_config.c:            if (p2config->peer_heartbeat_missed_threshold > 
+dlep_config.c:                p2config->peer_heartbeat_missed_threshold = 
+dlep_config.c:            p2config->peer_term_ack_tmo = strtoul(argv[1], NULL, 10);
+dlep_config.c:            if (p2config->peer_term_ack_tmo <
+dlep_config.c:                p2config->peer_term_ack_tmo =
+dlep_config.c:            if (p2config->peer_term_ack_tmo >
+dlep_config.c:                p2config->peer_term_ack_tmo =
+dlep_config.c:            p2config->peer_term_missed_ack_threshold =
+dlep_config.c:            if (p2config->peer_term_missed_ack_threshold <
+dlep_config.c:                p2config->peer_term_missed_ack_threshold =
+dlep_config.c:            if (p2config->peer_term_missed_ack_threshold >
+dlep_config.c:                p2config->peer_term_missed_ack_threshold =
+dlep_config.c:            p2config->neighbor_up_ack_tmo = strtoul(argv[1], NULL, 10);
+dlep_config.c:            if (p2config->neighbor_up_ack_tmo < 
+dlep_config.c:                p2config->neighbor_up_ack_tmo = 
+dlep_config.c:            if (p2config->neighbor_up_ack_tmo > 
+dlep_config.c:                p2config->neighbor_up_ack_tmo = 
+dlep_config.c:            p2config->neighbor_up_missed_ack_threshold = 
+dlep_config.c:            if (p2config->neighbor_up_missed_ack_threshold < 
+dlep_config.c:                p2config->neighbor_up_missed_ack_threshold = 
+dlep_config.c:            if (p2config->neighbor_up_missed_ack_threshold > 
+dlep_config.c:                p2config->neighbor_up_missed_ack_threshold = 
+dlep_config.c:            p2config->neighbor_update_interval_tmo = 
+dlep_config.c:            if (p2config->neighbor_update_interval_tmo > 0) {  
+dlep_config.c:                if (p2config->neighbor_update_interval_tmo < 
+dlep_config.c:                    p2config->neighbor_update_interval_tmo = 
+dlep_config.c:                if (p2config->neighbor_update_interval_tmo > 
+dlep_config.c:                    p2config->neighbor_update_interval_tmo = 
+dlep_config.c:            p2config->neighbor_activity_timer = strtoul(argv[1], NULL, 10);
+dlep_config.c:            if (!p2config->neighbor_activity_timer) {   
+dlep_config.c:                if (p2config->neighbor_activity_timer < 
+dlep_config.c:                    p2config->neighbor_activity_timer = 
+dlep_config.c:                if (p2config->neighbor_activity_timer > 
+dlep_config.c:                    p2config->neighbor_activity_timer = 
+dlep_config.c:            p2config->neighbor_down_ack_tmo = strtoul(argv[1], NULL, 10);
+dlep_config.c:            if (p2config->neighbor_down_ack_tmo <
+dlep_config.c:                p2config->neighbor_down_ack_tmo =
+dlep_config.c:            if (p2config->neighbor_down_ack_tmo >
+dlep_config.c:                p2config->neighbor_down_ack_tmo =
+dlep_config.c:            p2config->neighbor_down_missed_ack_threshold =
+dlep_config.c:            if (p2config->neighbor_down_missed_ack_threshold <
+dlep_config.c:                p2config->neighbor_down_missed_ack_threshold =
+dlep_config.c:            if (p2config->neighbor_down_missed_ack_threshold >
+dlep_config.c:                p2config->neighbor_down_missed_ack_threshold =
+dlep_context_peer.c:                      p2config->peer_term_ack_tmo; 
+dlep_context_peer.c:                      p2config->peer_term_missed_ack_threshold; 
+dlep_context_peer.c:                      p2config->peer_heartbeat_interval; 
+dlep_context_peer.c:                      p2config->peer_heartbeat_missed_threshold; 
+dlep_context_peer.c:                      p2config->neighbor_up_ack_tmo; 
+dlep_context_peer.c:                      p2config->neighbor_up_missed_ack_threshold; 
+dlep_context_peer.c:                      p2config->neighbor_update_interval_tmo; 
+dlep_context_peer.c:                      p2config->neighbor_activity_timer; 
+dlep_context_peer.c:                      p2config->neighbor_down_ack_tmo; 
+dlep_context_peer.c:                      p2config->neighbor_down_missed_ack_threshold; 
+dlep_message_builder.c:                          p2config->peer_heartbeat_interval);
+dlep_message_builder.c:    rfc5444_peer_tlv(p2es, p2config->local_type_description); 
+dlep_message_builder.c:                                p2config->peer_heartbeat_interval); 
+dlep_message_builder.c:    rfc5444_peer_tlv(p2es, p2config->local_type_description); 
+dlep_message_builder.c:     rfc5444_heartbeat_interval_tlv(p2es, p2config->peer_heartbeat_interval);
+dlep_message_builder.c:     rfc5444_peer_tlv(p2es, p2config->local_type_description);
+dlep_message_builder.c:     rfc5444_heartbeat_interval_tlv(p2es, p2config->peer_heartbeat_interval);
+dlep_message_builder.c:     rfc5444_peer_tlv(p2es, p2config->local_type_description);
+dlep_message_builder.c:                          p2config->peer_heartbeat_interval);
+dlep_message_builder.c:                                   p2config->peer_heartbeat_interval);
+dlep_message_builder.c:                          p2config->peer_heartbeat_interval);
+dlep_message_builder.c:                          p2config->peer_heartbeat_interval);
+dlep_message_builder.c:                          p2config->peer_heartbeat_interval);
+dlep_message_builder.c:                          p2config->peer_heartbeat_interval);
+dlep_message_builder.c:                          p2config->peer_heartbeat_interval);
+dlep_message_builder.c:                          p2config->peer_heartbeat_interval);
+dlep_message_builder.c:                          p2config->peer_heartbeat_interval);
+dlep_message_builder.c:                          p2config->peer_heartbeat_interval);
+dlep_message_builder.c:                          p2config->peer_heartbeat_interval);
+dlep_message_builder.c:                          p2config->peer_heartbeat_interval);
+dlep_message_builder.c:                          p2config->peer_heartbeat_interval);
+dlep_message_builder.c:                          p2config->peer_heartbeat_interval);
+dlep_porter.c:    p2config->dlep_tcp_sockfd = socket(AF_INET, SOCK_STREAM, IPPROTO_IP);
+dlep_porter.c://    fcntl(p2config->dlep_tcp_sockfd, F_SETFL, O_NONBLOCK);
+dlep_porter.c:    memset(&p2config->dlep_addr, 0, sizeof(struct sockaddr_in));
+dlep_porter.c:    p2config->dlep_addr.sin_family = AF_INET;
+dlep_porter.c:    p2config->dlep_addr.sin_port = htons(p2config->local_tcp_port);
+dlep_porter.c:    p2config->dlep_addr.sin_addr.s_addr = INADDR_ANY;
+dlep_porter.c:    status = bind(p2config->dlep_tcp_sockfd,
+dlep_porter.c:            (struct sockaddr *)&p2config->dlep_addr,
+dlep_porter.c:                      p2config->local_tcp_port);
+dlep_porter.c:    status = listen(p2config->dlep_tcp_sockfd,5);
+dlep_porter.c:    p2config->client_lenght = sizeof(p2config->client);
+dlep_porter.c:    p2config->dlep_tcp_client_sockfd= accept(p2config->dlep_tcp_sockfd,
+dlep_porter.c:             (struct sockaddr *)&p2config->client, &p2config->client_lenght);
+dlep_porter.c:    if (p2config->dlep_tcp_client_sockfd < 0) {
+dlep_porter.c:    printf(" dlep_tcp_sockfd after accept =%d",p2config->dlep_tcp_client_sockfd);
+dlep_porter.c://    if (p2config->start_on_discovery) { 
+dlep_porter.c:    p2config->dlep_udp_sockfd = socket(AF_INET, SOCK_DGRAM, IPPROTO_IP);
+dlep_porter.c:    if (p2config->dlep_udp_sockfd < 0) {
+dlep_porter.c:    memset(&p2config->dlep_addr, 0, sizeof(struct sockaddr_in));
+dlep_porter.c:    p2config->dlep_addr.sin_family = AF_INET;
+dlep_porter.c:    p2config->dlep_addr.sin_port = htons(p2config->local_udp_port);
+dlep_porter.c:    p2config->dlep_addr.sin_addr.s_addr = htonl(INADDR_ANY);
+dlep_porter.c:    status = bind(p2config->dlep_udp_sockfd,
+dlep_porter.c:            (struct sockaddr *)&p2config->dlep_addr,
+dlep_porter.c:                      p2config->local_udp_port);  
+dlep_porter.c://    listen(32, p2config->dlep_udp_sockfd);
+dlep_porter.c:    p2config->dlep_tcp_sockfd = socket(AF_INET, SOCK_STREAM, IPPROTO_IP);
+dlep_porter.c://    fcntl(p2config->dlep_tcp_sockfd, F_SETFL, O_NONBLOCK);
+dlep_porter.c:    if (p2config->dlep_tcp_sockfd < 0) {
+dlep_porter.c:    memset(&p2config->dlep_addr, 0, sizeof(struct sockaddr_in));
+dlep_porter.c:    p2config->dlep_addr.sin_family = AF_INET;
+dlep_porter.c:    p2config->dlep_addr.sin_port = htons(p2config->local_tcp_port);
+dlep_porter.c:    p2config->dlep_addr.sin_addr.s_addr = htonl(INADDR_ANY);
+dlep_porter.c:    status = bind(p2config->dlep_tcp_sockfd,
+dlep_porter.c:            (struct sockaddr *)&p2config->dlep_addr,
+dlep_porter.c:                      p2config->local_tcp_port);
+dlep_porter.c:    listen(32, p2config->dlep_tcp_sockfd);
+dlep_porter.c:    status = connect(p2config->dlep_tcp_sockfd,
+dlep_porter.c://    listen(32, p2config->dlep_sockfd);
+dlep_porter.c:        num_bytes = recvfrom(p2config->dlep_udp_sockfd, 
+dlep_porter.c:        num_bytes = recvfrom(p2config->dlep_tcp_sockfd,
+dlep_porter.c:    send_bytes = sendto(p2config->dlep_udp_sockfd,
+dlep_porter.c:    send_bytes = sendto(p2config->dlep_tcp_sockfd,
+fuzz_message_builder.c:                          p2config->peer_heartbeat_interval);
+fuzz_message_builder.c:    rfc5444_peer_tlv(p2es, p2config->local_type_description); 
+fuzz_message_builder.c:                          p2config->peer_heartbeat_interval);
+fuzz_message_builder.c:    rfc5444_peer_tlv(p2es, p2config->local_type_description); 
+fuzz_message_builder.c:                          p2config->peer_heartbeat_interval);
+fuzz_message_builder.c:    rfc5444_peer_tlv(p2es, p2config->local_type_description); 
+fuzz_message_builder.c:                          p2config->peer_heartbeat_interval);
+fuzz_message_builder.c:                          p2config->peer_heartbeat_interval);
+fuzz_message_builder.c:                          p2config->peer_heartbeat_interval);
+fuzz_message_builder.c:                          p2config->peer_heartbeat_interval);
+fuzz_message_builder.c:                          p2config->peer_heartbeat_interval);
+fuzz_message_builder.c:                          p2config->peer_heartbeat_interval);
+fuzz_message_builder.c:                          p2config->peer_heartbeat_interval);
+fuzz_message_builder.c:                          p2config->peer_heartbeat_interval);
+fuzz_message_builder.c:                          p2config->peer_heartbeat_interval);
+fuzz_message_builder.c:                          p2config->peer_heartbeat_interval);
+fuzz_message_builder.c:                          p2config->peer_heartbeat_interval);
+fuzz_message_builder.c:                          p2config->peer_heartbeat_interval);
+fuzz_message_builder.c:                          p2config->peer_heartbeat_interval);
+fuzz_message_builder.c:                          p2config->peer_heartbeat_interval);
+sim_dlep_radio.c:               strcpy(p2config->filename, args);
+sim_dlep_radio.c:               printf(" Config file = %s \n", p2config->filename);
+sim_dlep_radio.c:    p2peer = dlep_peer_allocate(&p2config->local_ipv4, 
+sim_dlep_radio.c:                                 p2config->local_udp_port,
+sim_dlep_radio.c:                                 p2config->local_tcp_port);
+sim_dlep_radio.c:    p2peer->peer_udp_port = p2config->router_udp_port;
+sim_dlep_radio.c://   if (!p2config->start_on_discovery) {
+sim_dlep_radio.c:    p2peer->peer_tcp_port = p2config->router_tcp_port;
+sim_dlep_radio.c:                      p2config->router_ipv4.v4_addr.v4_addr32;
+sim_dlep_radio.c:    p2peer->client_id = p2config->local_id; 
+sim_dlep_radio.c:    if (p2config->start_on_launch) {
+sim_dlep_radio.c:        if (p2config->start_on_discovery) {
+sim_dlep_radio.c:    cli_set_prompt(p2config->sim_name);
+sim_dlep_radio.c:        FD_SET(p2config->dlep_udp_sockfd, &readfds);
+sim_dlep_radio.c:       FD_SET(p2config->dlep_tcp_sockfd, &readfds);
+sim_dlep_radio.c://       highsock = p2config->dlep_udp_sockfd + 1;
+sim_dlep_radio.c:       highsock = p2config->dlep_tcp_sockfd + 1;
+sim_dlep_radio.c://        printf("\n UDP sock %d, TCP sock %d",p2config->dlep_udp_sockfd,p2config->dlep_tcp_sockfd);
+sim_dlep_radio.c:        if (FD_ISSET(p2config->dlep_udp_sockfd, &readfds)) {
+sim_dlep_radio.c:        if (FD_ISSET(p2config->dlep_tcp_sockfd, &readfds)&& TCP_READY)  {
+sim_dlep_radio.c:            printf(" INSIDE tcp socket set tsock %d",p2config->dlep_tcp_sockfd);
+sim_dlep_radio_cli.c:/*        if (p2config->start_on_discovery) {
