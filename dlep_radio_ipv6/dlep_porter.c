@@ -286,11 +286,10 @@ dlep_porter_open (dlep_config_t *p2config)
     int status;
     struct addrinfo  *resmulti; 
 
-    p2config->reuse = 1;
-
     if (!p2config) {
         return;
     }
+    p2config->reuse = 1;
 
 //    if (p2config->start_on_discovery) { 
     if (dlep_debug_flags & DLEP_UDP_TRACE_FLAG) {
